@@ -30,7 +30,7 @@ let oddNumbers = [];
 
 // Create a recursive function that will return the odd numbers. No looping! :)
 function getOddNumbers(nums, counter) {
-	if (counter == nums.length) {
+	if (counter === nums.length) {
 		return;
 	}
 	// Check to see if the number is odd, if so push it into a new array
