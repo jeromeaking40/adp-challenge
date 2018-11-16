@@ -30,9 +30,9 @@ let numbers = [
 let oddNumbers = [];
 
 // Check to see if a number is odd
-function isOddNumber(c, d) {
-	if (c % 2 & d % 2) {
-		oddNumbers.push(c);
+function isOddNumber(a, b) {
+	if (a % 2 & b % 2) {
+		oddNumbers.push(a);
 		return oddNumbers;
 	}
 }
