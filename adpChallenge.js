@@ -2,7 +2,6 @@
 // The function must not use looping or libraries that use looping.
 
 // Array of numbers
-// Each number needs to be tested against the isOddNumber function
 let numbers = [
 	2,
 	3,
@@ -26,23 +25,20 @@ let numbers = [
 	305
 ];
 
-// Push all odd numbers into this array;
+// Define a new array that will hold the odd numbers..
 let oddNumbers = [];
 
-// Check to see if a number is odd
-function isOddNumber(a, b) {
-	if (a % 2 & b % 2) {
-		oddNumbers.push(a);
-		return oddNumbers;
+// Create a recursive function that will return the odd numbers. No looping! :)
+function getOddNumbers(nums, counter) {
+	if (counter == nums.length) {
+		return;
 	}
+	// Check to see if the number is odd, if so push it into a new array
+	if (nums[counter] % 2) {
+		oddNumbers.push(nums[counter]);
+		console.log(oddNumbers);
+	}
+	getOddNumbers(nums, counter + 1);
 }
 
-// Return array of only odd numbers in this function.
-function getOddNumbers(nums = []) {
-	// Is sorting an array considered looping? I don't think so. Might be wrong?!?!?!
-	nums.sort(isOddNumber);
-	console.log(oddNumbers);
-}
-
-// Call the function
-getOddNumbers(numbers);
+getOddNumbers(numbers, 0);
