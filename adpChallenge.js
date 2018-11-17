@@ -28,7 +28,7 @@ let numbers = [
 // Define a new array that will hold the odd numbers..
 let oddNumbers = [];
 
-// Create a recursive function that will return the odd numbers. No looping! :)
+// Create a recursive function that will return the odd numbers. No looping!
 function getOddNumbers(nums, counter) {
 	if (counter === nums.length) {
 		return;
