@@ -38,7 +38,7 @@ function getOddNumbers(nums, counter) {
 		oddNumbers.push(nums[counter]);
 		console.log(oddNumbers);
 	}
-	getOddNumbers(nums, counter + 1);
+	return getOddNumbers(nums, counter + 1);
 }
 
 getOddNumbers(numbers, 0);
